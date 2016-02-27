@@ -1,0 +1,7 @@
+language: ruby
+rvm:
+  - ruby 2.1.1
+services:
+  - postgresql
+before_script:
+  psql -c 'create database "pg-test_test";' -U postgres
